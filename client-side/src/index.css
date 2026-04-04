@@ -1,1 +1,16 @@
 @import 'tailwindcss';
+
+@theme {
+  /* Colors */
+  --color-primary: #990404;
+  --color-secondary: #c5a059;
+  --color-tertiary: #1a1a1a;
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --gradient-brand: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}

@@ -1,9 +1,11 @@
 import './App.css';
 
+import PublicHomePage from './pages/PublicHomePage';
+
 function App() {
   return (
     <>
-      <h1 className="flex items-center justify-center"> Hello World! </h1>
+      <PublicHomePage />
     </>
   );
 }
