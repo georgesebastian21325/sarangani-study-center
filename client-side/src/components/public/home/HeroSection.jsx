@@ -1,4 +1,4 @@
-import heroImage from '../../../public/hero-section.png';
+import heroImage from '../../../../public/hero-section.png';
 
 export default function HeroSection() {
   return (

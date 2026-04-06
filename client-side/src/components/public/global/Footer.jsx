@@ -1,3 +1,5 @@
+import saranganiLogo from '../../../../public/sarangani-logo.png';
+
 export default function Footer() {
   return (
     <>
@@ -238,12 +240,7 @@ export default function Footer() {
           <div className="footer-grid">
             {/* ── Brand ── */}
             <div className="footer-brand">
-              <div className="footer-brand-eyebrow">Opus Dei</div>
-              <h2>
-                Sarangani
-                <br />
-                <em>Study Center</em>
-              </h2>
+              <img src={saranganiLogo} alt="Sarangani Logo" srcset="" />
               <p>
                 Dedicated to the spiritual and intellectual formation of its
                 members — finding holiness through work and ordinary life.

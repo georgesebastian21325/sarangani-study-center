@@ -1,4 +1,4 @@
-import { AdminCard } from '../AdminCard';
+import { AdminCard } from './AdminCard';
 
 export default function LeadershipSection() {
   return (

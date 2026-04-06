@@ -41,13 +41,14 @@ export default function OpusDeiSection() {
           max-width: 1100px;
           margin: 0 auto;
           padding: 0 1.5rem;
+          
         }
 
         /* ── Hero band ── */
         .opus-hero {
           position: relative;
           background: linear-gradient(135deg, #7a0303 0%, #990404 45%, #3d1a00 100%);
-          border-radius: 2px;
+          border-radius: 32px;
           overflow: hidden;
           padding: 72px 64px 64px;
         }
@@ -150,7 +151,7 @@ export default function OpusDeiSection() {
           gap: 2px;
           background: #1c0a0a;
           border: 2px solid #1c0a0a;
-          border-radius: 2px;
+          border-radius: 32px;
           overflow: hidden;
         }
 
@@ -282,9 +283,9 @@ export default function OpusDeiSection() {
         }
       `}</style>
 
-      <div className="opus-root ">
+      <div className="opus-root">
         {/* ── Hero band ── */}
-        <div className="opus-hero rounded-lg">
+        <div className="opus-hero rounded-lg mt-[-3rem] relative -z-10">
           <div className="opus-eyebrow">
             <span className="opus-eyebrow-line" />
             Personal Prelature of the Catholic Church

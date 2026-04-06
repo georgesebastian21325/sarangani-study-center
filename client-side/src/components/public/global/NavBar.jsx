@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import saranganiLogo from '../../../public/sarangani-logo.png';
+import { Link } from 'react-router-dom';
+import saranganiLogo from '../../../../public/sarangani-logo.png';
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -12,11 +13,9 @@ export default function NavBar() {
   }, []);
 
   const links = [
-    { label: 'Our Leadership', href: '#about' },
-    { label: 'Highlights', href: '#highlights' },
-    { label: 'Events', href: '#events' },
-    { label: 'Opus Dei', href: '#opus-dei' },
-    { label: 'Contact Us', href: '#contact' },
+    { label: 'About Us', href: '/about-us' },
+    { label: 'Events', href: '/events-page' },
+    { label: 'Contact Us', href: '/contact-us' },
   ];
 
   return (
@@ -239,7 +238,13 @@ export default function NavBar() {
       <nav className={`nav-root${scrolled ? ' scrolled' : ''}`}>
         <div className="nav-pill">
           {/* Logo */}
-          <img src={saranganiLogo} alt="Sarangani Logo" className="nav-logo" />
+          <Link to="/">
+            <img
+              src={saranganiLogo}
+              alt="Sarangani Logo"
+              className="nav-logo"
+            />
+          </Link>
 
           {/* Desktop Links */}
           <ul className="nav-links">
@@ -251,7 +256,8 @@ export default function NavBar() {
           </ul>
 
           {/* CTA — last link styled as button */}
-          <a href="#contact" className="nav-cta">
+
+          <a href="/contact-us" className="nav-cta">
             <span className="nav-cta-dot" />
             Contact Us
           </a>
