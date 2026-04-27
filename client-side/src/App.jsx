@@ -4,6 +4,9 @@ import AboutUsPage from './pages/AboutUsPage';
 import EventsPage from './pages/EventsPage';
 import ContactUsPage from './pages/ContactUsPage';
 
+import AdminDashboard from './components/admin/AdminDashboard';
+import ResidentDashboard from './components/resident/ResidentDashboard';
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +15,8 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/events-page" element={<EventsPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/resident-dashboard" element={<ResidentDashboard />} />
       </Routes>
     </BrowserRouter>
   );
