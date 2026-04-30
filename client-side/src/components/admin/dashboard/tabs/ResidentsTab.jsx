@@ -1,4 +1,5 @@
-import { MEALS, RESIDENTS } from '../data/constants';
+import { MEALS } from '../../../global/dashboard/data/mealConstants';
+import { RESIDENTS } from '../data/constants';
 import { SectionRule } from '../ui/SectionRule';
 
 const STATUS_LEGEND = [

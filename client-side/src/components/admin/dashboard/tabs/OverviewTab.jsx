@@ -8,10 +8,11 @@ import {
   YAxis,
 } from 'recharts';
 import { AlertCircle, CheckCircle2, Users } from 'lucide-react';
-import { MEAL_COLORS, WEEKLY_DATA } from '../data/constants';
+import { MEAL_COLORS } from '../../../global/dashboard/data/mealConstants';
+import { MealLegend } from '../../../global/dashboard/ui/MealLegend';
+import { WEEKLY_DATA } from '../data/constants';
 import { ChartTooltip } from '../ui/ChartTooltip';
 import { KpiCard } from '../ui/KpiCard';
-import { MealLegend } from '../ui/MealLegend';
 import { SectionRule } from '../ui/SectionRule';
 
 const DAY_NAMES = {

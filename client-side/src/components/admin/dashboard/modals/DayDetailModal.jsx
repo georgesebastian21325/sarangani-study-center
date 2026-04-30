@@ -1,5 +1,5 @@
 import { X } from 'lucide-react';
-import { MEAL_COLORS, MEAL_ICONS } from '../data/constants';
+import { MEAL_COLORS, MEAL_ICONS } from '../../../global/dashboard/data/mealConstants';
 import { getMockDayCounts } from '../data/helpers';
 
 export const DayDetailModal = ({ open, date, onClose }) => {

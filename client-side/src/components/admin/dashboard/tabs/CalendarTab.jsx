@@ -1,8 +1,9 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { MEAL_COLORS } from '../data/constants';
-import { getMockDayCounts, isPastDate, isToday } from '../data/helpers';
-import { CalendarSkeleton } from '../ui/CalendarSkeleton';
-import { MealLegend } from '../ui/MealLegend';
+import { isPastDate, isToday } from '../../../global/dashboard/data/dateHelpers';
+import { MEAL_COLORS } from '../../../global/dashboard/data/mealConstants';
+import { CalendarSkeleton } from '../../../global/dashboard/ui/CalendarSkeleton';
+import { MealLegend } from '../../../global/dashboard/ui/MealLegend';
+import { getMockDayCounts } from '../data/helpers';
 import { SectionRule } from '../ui/SectionRule';
 
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -19,7 +20,7 @@ export const CalendarTab = ({
 
     <div className="od-card p-6 md:p-8">
       {calendarLoading ? (
-        <CalendarSkeleton />
+        <CalendarSkeleton dayHeightClass="h-20" />
       ) : (
         <>
           <div className="flex justify-between items-center mb-8">

@@ -1,18 +1,22 @@
 import { useMemo, useState } from 'react';
+import {
+  generateCalendarDays,
+  getGreetingConfig,
+} from '../global/dashboard/data/dateHelpers';
+import { useToast } from '../global/dashboard/hooks/useToast';
+import { FontLoader } from '../global/dashboard/styles/FontLoader';
+import { Toast } from '../global/dashboard/ui/Toast';
 import { RESIDENTS } from './dashboard/data/constants';
-import { generateCalendarDays, getGreetingConfig } from './dashboard/data/helpers';
-import { useToast } from './dashboard/hooks/useToast';
 import { Navbar } from './dashboard/layout/Navbar';
 import { PageHeader } from './dashboard/layout/PageHeader';
 import { Sidebar } from './dashboard/layout/Sidebar';
 import { TabBar } from './dashboard/layout/TabBar';
 import { DayDetailModal } from './dashboard/modals/DayDetailModal';
 import { RemindModal } from './dashboard/modals/RemindModal';
-import { FontLoader, GlobalStyles } from './dashboard/styles/styles';
+import { GlobalStyles } from './dashboard/styles/styles';
 import { CalendarTab } from './dashboard/tabs/CalendarTab';
 import { OverviewTab } from './dashboard/tabs/OverviewTab';
 import { ResidentsTab } from './dashboard/tabs/ResidentsTab';
-import { Toast } from './dashboard/ui/Toast';
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('overview');

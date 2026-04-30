@@ -2,28 +2,28 @@ import { AlertCircle, CheckCircle2, Loader2 } from 'lucide-react';
 
 export const Toast = ({ toasts }) => (
   <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-2 pointer-events-none">
-    {toasts.map((t) => (
+    {toasts.map((toast) => (
       <div
-        key={t.id}
+        key={toast.id}
         className={`flex items-center gap-3 px-4 py-3 rounded-lg shadow-lg pointer-events-auto ${
-          t.exiting ? 'toast-exit' : 'toast-enter'
+          toast.exiting ? 'toast-exit' : 'toast-enter'
         } ${
-          t.type === 'success'
+          toast.type === 'success'
             ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
-            : t.type === 'error'
+            : toast.type === 'error'
             ? 'bg-red-50 text-red-800 border border-red-200'
             : 'bg-amber-50 text-amber-800 border border-amber-200'
         }`}
         style={{ fontFamily: "'Crimson Text', serif", fontSize: '15px' }}
       >
-        {t.type === 'success' ? (
+        {toast.type === 'success' ? (
           <CheckCircle2 size={16} className="text-emerald-600 flex-shrink-0" />
-        ) : t.type === 'error' ? (
+        ) : toast.type === 'error' ? (
           <AlertCircle size={16} className="text-red-500 flex-shrink-0" />
         ) : (
           <Loader2 size={16} className="text-amber-500 flex-shrink-0 od-spin" />
         )}
-        {t.message}
+        {toast.message}
       </div>
     ))}
   </div>
