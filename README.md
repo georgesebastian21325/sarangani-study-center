@@ -19,7 +19,7 @@ A web application designed to support the daily operations of the Sarangani Stud
 
 **Client:** React, TailwindCSS
 
-**Server:** Firebase, Firestore,
+**Server:** Firebase (BaaS)
 
 ## Screenshots
 
