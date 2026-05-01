@@ -14,7 +14,7 @@ export const Navbar = () => (
         className="od-cinzel text-sm tracking-widest font-bold"
         style={{ color: '#5a0a1e' }}
       >
-        Sarangani Administration
+        Sarangani Study Center
       </h1>
     </div>
     <div className="flex items-center gap-5">

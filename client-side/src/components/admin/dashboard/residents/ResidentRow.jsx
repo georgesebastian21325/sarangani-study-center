@@ -1,4 +1,5 @@
 import { MEALS } from '../../../global/dashboard/data/mealConstants';
+import { getCompletionStatus } from '../js/completionStatus';
 
 export const ResidentRow = ({ resident, onRemind }) => {
   const loggedCount = Object.values(resident.meals).filter(Boolean).length;
@@ -40,33 +41,59 @@ const ResidentNameCell = ({ resident }) => (
 );
 
 const MealStatusCells = ({ meals }) =>
-  MEALS.map((meal) => (
-    <td key={meal} style={{ padding: '12px 16px' }}>
-      <div
-        className={meals[meal] ? 'od-dot-logged' : 'od-dot-missing'}
-        title={meals[meal] ? 'Logged' : 'Not logged'}
-      >
-        {meals[meal] ? '✦' : '·'}
-      </div>
-    </td>
-  ));
+  MEALS.map((meal) => {
+    const logged = meals[meal];
 
-const CompletionCell = ({ pct }) => (
-  <td style={{ padding: '12px 16px', textAlign: 'center' }}>
-    <div className="od-progress-track mx-auto mb-1">
+    return (
+      <td key={meal} style={{ padding: '12px 16px' }}>
+        <div
+          className={logged ? 'od-dot-logged' : 'od-dot-missing'}
+          title={logged ? 'Logged' : 'Missing'}
+          aria-label={`${meal} ${logged ? 'logged' : 'missing'}`}
+        >
+          {logged ? '✓' : '!'}
+        </div>
+      </td>
+    );
+  });
+
+const CompletionCell = ({ pct }) => {
+  const status = getCompletionStatus(pct);
+
+  return (
+    <td style={{ padding: '12px 16px', textAlign: 'center' }}>
       <div
-        className={`od-progress-fill ${pct === 100 ? 'od-progress-full' : ''}`}
-        style={{ width: `${pct}%` }}
-      />
-    </div>
-    <span
-      className="od-cinzel"
-      style={{ fontSize: '8px', letterSpacing: '0.1em', color: '#9c856a' }}
-    >
-      {pct}%
-    </span>
-  </td>
-);
+        className="od-progress-track mx-auto mb-2"
+        aria-label={`${pct}% complete, ${status.label}`}
+      >
+        <div
+          className="od-progress-fill"
+          style={{ width: `${pct}%`, background: status.color }}
+        />
+      </div>
+      <span
+        className="od-cinzel"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minWidth: '58px',
+          padding: '3px 7px',
+          borderRadius: '999px',
+          border: `1px solid ${status.border}`,
+          background: status.background,
+          color: status.color,
+          fontSize: '8px',
+          letterSpacing: '0.1em',
+          fontWeight: 700,
+        }}
+        title={status.label}
+      >
+        {pct}%
+      </span>
+    </td>
+  );
+};
 
 const ActionCell = ({ resident, pct, onRemind }) => (
   <td style={{ padding: '12px 16px', textAlign: 'center' }}>
@@ -84,4 +111,3 @@ const ActionCell = ({ resident, pct, onRemind }) => (
     )}
   </td>
 );
-

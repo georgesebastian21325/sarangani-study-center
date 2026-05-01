@@ -3,18 +3,18 @@ import {
   generateCalendarDays,
   getGreetingConfig,
   isPastDate,
-} from '../global/dashboard/data/dateHelpers';
-import { useToast } from '../global/dashboard/hooks/useToast';
-import { FontLoader } from '../global/dashboard/styles/FontLoader';
-import { Toast } from '../global/dashboard/ui/Toast';
-import { ResidentCalendar } from './dashboard/calendar/ResidentCalendar';
-import { EMPTY_REQUEST } from './dashboard/data/constants';
-import { Navbar } from './dashboard/layout/Navbar';
-import { PageHeader } from './dashboard/layout/PageHeader';
-import { ConfirmModal } from './dashboard/modals/ConfirmModal';
-import { MealModal } from './dashboard/modals/MealModal';
-import { RequestModal } from './dashboard/modals/RequestModal';
-import { GlobalStyles } from './dashboard/styles/styles';
+} from '../components/global/dashboard/data/dateHelpers';
+import { useToast } from '../components/global/dashboard/hooks/useToast';
+import { FontLoader } from '../components/global/dashboard/styles/FontLoader';
+import { Toast } from '../components/global/dashboard/ui/Toast';
+import { ResidentCalendar } from '../components/resident/dashboard/calendar/ResidentCalendar';
+import { EMPTY_REQUEST } from '../components/resident/dashboard/data/constants';
+import { Navbar } from '../components/resident/dashboard/layout/Navbar';
+import { PageHeader } from '../components/resident/dashboard/layout/PageHeader';
+import { ConfirmModal } from '../components/resident/dashboard/modals/ConfirmModal';
+import { MealModal } from '../components/resident/dashboard/modals/MealModal';
+import { RequestModal } from '../components/resident/dashboard/modals/RequestModal';
+import { GlobalStyles } from '../components/resident/dashboard/styles/styles';
 
 export default function ResidentDashboard() {
   const [currentDate, setCurrentDate] = useState(new Date());

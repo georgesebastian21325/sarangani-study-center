@@ -2,21 +2,21 @@ import { useMemo, useState } from 'react';
 import {
   generateCalendarDays,
   getGreetingConfig,
-} from '../global/dashboard/data/dateHelpers';
-import { useToast } from '../global/dashboard/hooks/useToast';
-import { FontLoader } from '../global/dashboard/styles/FontLoader';
-import { Toast } from '../global/dashboard/ui/Toast';
-import { RESIDENTS } from './dashboard/js/constants';
-import { Navbar } from './dashboard/layout/Navbar';
-import { PageHeader } from './dashboard/layout/PageHeader';
-import { Sidebar } from './dashboard/layout/Sidebar';
-import { TabBar } from './dashboard/layout/TabBar';
-import { DayDetailModal } from './dashboard/modals/DayDetailModal';
-import { RemindModal } from './dashboard/modals/RemindModal';
-import { GlobalStyles } from './dashboard/styles/styles';
-import { CalendarTab } from './dashboard/tabs/CalendarTab';
-import { OverviewTab } from './dashboard/tabs/OverviewTab';
-import { ResidentsTab } from './dashboard/tabs/ResidentsTab';
+} from '../components/global/dashboard/data/dateHelpers';
+import { useToast } from '../components/global/dashboard/hooks/useToast';
+import { FontLoader } from '../components/global/dashboard/styles/FontLoader';
+import { Toast } from '../components/global/dashboard/ui/Toast';
+import { RESIDENTS } from '../components/admin/dashboard/js/constants';
+import { Navbar } from '../components/admin/dashboard/layout/Navbar';
+import { PageHeader } from '../components/admin/dashboard/layout/PageHeader';
+import { Sidebar } from '../components/admin/dashboard/layout/Sidebar';
+import { TabBar } from '../components/admin/dashboard/layout/TabBar';
+import { DayDetailModal } from '../components/admin/dashboard/modals/DayDetailModal';
+import { RemindModal } from '../components/admin/dashboard/modals/RemindModal';
+import { GlobalStyles } from '../components/admin/dashboard/styles/styles';
+import { CalendarTab } from '../components/admin/dashboard/tabs/CalendarTab';
+import { OverviewTab } from '../components/admin/dashboard/tabs/OverviewTab';
+import { ResidentsTab } from '../components/admin/dashboard/tabs/ResidentsTab';
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('overview');

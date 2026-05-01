@@ -129,11 +129,11 @@ export const GlobalStyles = () => (
     .od-tab-inactive { color: #7a6e68; border-bottom: 2px solid transparent; }
     .od-tab-inactive:hover { color: #3a3430; }
 
-    .od-dot-logged  { width:22px; height:22px; border-radius:50%; background:rgba(90,10,30,0.08);  border:1.5px solid #9e7c2e; display:flex; align-items:center; justify-content:center; color:#9e7c2e; font-size:10px; }
-    .od-dot-missing { width:22px; height:22px; border-radius:50%; background:rgba(232,222,206,0.5); border:1.5px solid #d5c9b8; display:flex; align-items:center; justify-content:center; color:#d5c9b8; font-size:14px; }
+    .od-dot-logged  { width:24px; height:24px; border-radius:50%; background:#ecfdf5; border:1.5px solid #a7f3d0; display:flex; align-items:center; justify-content:center; color:#047857; font-size:13px; font-weight:700; }
+    .od-dot-missing { width:24px; height:24px; border-radius:50%; background:#fef2f2; border:1.5px solid #fecaca; display:flex; align-items:center; justify-content:center; color:#dc2626; font-size:14px; font-weight:700; }
 
     .od-progress-track { background: #e8dece; border-radius: 9999px; height: 4px; width: 80px; overflow: hidden; }
-    .od-progress-fill  { height: 100%; border-radius: 9999px; background: linear-gradient(to right, #5a0a1e, #9e7c2e); }
+    .od-progress-fill  { height: 100%; border-radius: 9999px; background: #b45309; transition: width 0.2s ease, background 0.2s ease; }
     .od-progress-full  { background: linear-gradient(to right, #9e7c2e, #c9a84c); }
 
     .od-card { background: #fff; border: 1px solid #e8dece; border-radius: 8px; overflow: hidden; }
