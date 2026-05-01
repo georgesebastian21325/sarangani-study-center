@@ -10,17 +10,19 @@ import ResidentDashboard from './pages/ResidentDashboard';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/events-page" element={<EventsPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        <Route path="/resident-dashboard" element={<ResidentDashboard />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/events-page" element={<EventsPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/resident-dashboard" element={<ResidentDashboard />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
