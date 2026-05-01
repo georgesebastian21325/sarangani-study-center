@@ -32,8 +32,8 @@ export const ResidentCalendar = ({
             <ChevronLeft size={24} />
           </button>
           <h2
-            className="od-cinzel text-lg font-bold tracking-widest"
-            style={{ color: '#5a0a1e' }}
+            className="od-cinzel font-bold tracking-widest"
+            style={{ color: '#5a0a1e', fontSize: '22px' }}
           >
             {currentDate.toLocaleString('default', {
               month: 'long',
@@ -56,7 +56,7 @@ export const ResidentCalendar = ({
               className="p-2 text-center font-bold uppercase"
               style={{
                 fontFamily: "'Cinzel', serif",
-                fontSize: '10px',
+                fontSize: '12px',
                 letterSpacing: '0.1em',
                 color: '#b09070',
               }}
@@ -78,7 +78,10 @@ export const ResidentCalendar = ({
           ))}
         </div>
 
-        <MealLegend className="mt-6 flex flex-wrap gap-4 justify-end" />
+        <MealLegend
+          className="mt-6 flex flex-wrap gap-4 justify-end"
+          fontSize="15px"
+        />
       </>
     )}
   </div>
@@ -99,8 +102,9 @@ const CalendarDay = ({ day, meals, onDayClick, onRequestClick }) => {
       }`}
     >
       <span
-        className="text-sm font-semibold block"
+        className="font-semibold block"
         style={{
+          fontSize: '17px',
           color: today
             ? '#5a0a1e'
             : hasSelections
@@ -113,8 +117,13 @@ const CalendarDay = ({ day, meals, onDayClick, onRequestClick }) => {
         {day.fullDate.getDate()}
         {today && (
           <span
-            className="ml-1 inline-block w-1.5 h-1.5 rounded-full"
-            style={{ background: '#9e7c2e', verticalAlign: 'middle' }}
+            className="ml-1 inline-block rounded-full"
+            style={{
+              width: '7px',
+              height: '7px',
+              background: '#9e7c2e',
+              verticalAlign: 'middle',
+            }}
           />
         )}
       </span>
@@ -134,7 +143,7 @@ const CalendarDay = ({ day, meals, onDayClick, onRequestClick }) => {
         {meals.length > 3 && (
           <span
             style={{
-              fontSize: '9px',
+              fontSize: '11px',
               color: '#9c856a',
               fontFamily: "'Cinzel', serif",
             }}
@@ -150,7 +159,7 @@ const CalendarDay = ({ day, meals, onDayClick, onRequestClick }) => {
           onClick={(event) => onRequestClick(event, day)}
           title="Special requests"
         >
-          <Edit3 size={13} />
+          <Edit3 size={15} />
         </button>
       )}
     </div>

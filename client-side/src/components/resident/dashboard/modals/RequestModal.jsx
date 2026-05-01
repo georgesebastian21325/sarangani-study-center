@@ -31,8 +31,8 @@ export const RequestModal = ({
         <div className="p-6">
           <div className="flex justify-between items-start mb-1">
             <h2
-              className="od-garamond text-2xl font-bold"
-              style={{ color: '#5a0a1e' }}
+              className="od-garamond font-bold"
+              style={{ color: '#5a0a1e', fontSize: '30px' }}
             >
               Special Requests
             </h2>
@@ -41,12 +41,16 @@ export const RequestModal = ({
               className="p-1.5 rounded-md hover:bg-stone-100"
               style={{ color: '#9c856a' }}
             >
-              <X size={20} />
+              <X size={22} />
             </button>
           </div>
           <p
-            className="text-sm mb-6"
-            style={{ color: '#9c856a', fontFamily: "'Crimson Text', serif" }}
+            className="mb-6"
+            style={{
+              color: '#9c856a',
+              fontFamily: "'Crimson Text', serif",
+              fontSize: '18px',
+            }}
           >
             {date?.toLocaleDateString('default', {
               weekday: 'long',
@@ -61,7 +65,7 @@ export const RequestModal = ({
               return (
                 <label
                   key={item}
-                  className="flex items-center justify-between p-3.5 rounded-lg cursor-pointer transition-all"
+                  className="flex items-center justify-between p-4 rounded-lg cursor-pointer transition-all"
                   style={{
                     border: checked
                       ? '1.5px solid #9e7c2e80'
@@ -72,7 +76,7 @@ export const RequestModal = ({
                   <span
                     style={{
                       fontFamily: "'Crimson Text', serif",
-                      fontSize: '17px',
+                      fontSize: '20px',
                       color: '#3b1a0a',
                     }}
                   >
@@ -92,7 +96,7 @@ export const RequestModal = ({
               <label
                 className="block mb-1.5"
                 style={{
-                  fontSize: '11px',
+                  fontSize: '13px',
                   fontFamily: "'Cinzel', serif",
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
@@ -123,11 +127,11 @@ export const RequestModal = ({
           >
             {saving ? (
               <>
-                <Loader2 size={14} className="od-spin" /> Saving…
+                <Loader2 size={16} className="od-spin" /> Saving…
               </>
             ) : (
               <>
-                <CheckCircle2 size={14} /> Save Request
+                <CheckCircle2 size={16} /> Save Request
               </>
             )}
           </button>
@@ -136,4 +140,3 @@ export const RequestModal = ({
     </div>
   );
 };
-

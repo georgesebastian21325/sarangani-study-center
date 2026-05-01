@@ -2,6 +2,7 @@ import { MEAL_COLORS } from '../data/mealConstants';
 
 export const MealLegend = ({
   className = 'flex flex-wrap gap-4 justify-end mt-3',
+  fontSize = '13px',
 }) => (
   <div className={className}>
     {Object.entries(MEAL_COLORS).map(([meal, color]) => (
@@ -14,7 +15,7 @@ export const MealLegend = ({
           className="capitalize"
           style={{
             fontFamily: "'Crimson Text', serif",
-            fontSize: '13px',
+            fontSize,
             color: '#9c856a',
           }}
         >
@@ -24,4 +25,3 @@ export const MealLegend = ({
     ))}
   </div>
 );
-

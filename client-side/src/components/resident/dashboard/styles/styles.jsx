@@ -1,7 +1,11 @@
 export const GlobalStyles = () => (
   <style>{`
     *, *::before, *::after { box-sizing: border-box; }
-    .od-body { font-family: 'Crimson Text', serif; }
+    .od-body {
+      font-family: 'Crimson Text', serif;
+      font-size: 18px;
+      line-height: 1.55;
+    }
     .od-cinzel { font-family: 'Cinzel', serif; }
     .od-garamond { font-family: 'EB Garamond', serif; }
 
@@ -37,14 +41,14 @@ export const GlobalStyles = () => (
 
     .od-btn-primary {
       font-family: 'Cinzel', serif;
-      font-size: 11px;
+      font-size: 12.5px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       background: #5a0a1e;
       color: #e8c96e;
       border: none;
       border-radius: 6px;
-      padding: 11px 20px;
+      padding: 13px 22px;
       cursor: pointer;
       transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
       display: inline-flex;
@@ -61,14 +65,14 @@ export const GlobalStyles = () => (
 
     .od-btn-ghost {
       font-family: 'Cinzel', serif;
-      font-size: 11px;
+      font-size: 12.5px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       background: transparent;
       color: #5a0a1e;
       border: 1px solid #c8a96e;
       border-radius: 6px;
-      padding: 11px 20px;
+      padding: 13px 22px;
       cursor: pointer;
       transition: background 0.2s, transform 0.1s;
       display: inline-flex;
@@ -79,11 +83,11 @@ export const GlobalStyles = () => (
     .od-btn-ghost:active { transform: translateY(0); }
 
     .od-chip {
-      font-size: 9px;
+      font-size: 10.5px;
       font-family: 'Cinzel', serif;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 2px 5px;
+      padding: 3px 7px;
       border-radius: 99px;
       font-weight: 600;
     }
@@ -105,7 +109,7 @@ export const GlobalStyles = () => (
     .od-edit-btn:hover { background: rgba(158,124,46,0.12); }
 
     .od-checkbox {
-      width: 18px; height: 18px;
+      width: 22px; height: 22px;
       border-radius: 4px;
       border: 1.5px solid #c8a96e;
       appearance: none;
@@ -136,10 +140,10 @@ export const GlobalStyles = () => (
     .od-number-input {
       width: 100%;
       border: 1px solid #e8dece;
-      padding: 10px 14px;
+      padding: 12px 15px;
       border-radius: 6px;
       font-family: 'Crimson Text', serif;
-      font-size: 16px;
+      font-size: 18px;
       color: #3b1a0a;
       background: #faf7f0;
       transition: border-color 0.15s;

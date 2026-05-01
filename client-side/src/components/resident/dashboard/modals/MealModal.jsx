@@ -38,8 +38,8 @@ export const MealModal = ({
         <div className="p-6">
           <div className="flex justify-between items-start mb-1">
             <h2
-              className="od-garamond text-2xl font-bold"
-              style={{ color: '#5a0a1e' }}
+              className="od-garamond font-bold"
+              style={{ color: '#5a0a1e', fontSize: '30px' }}
             >
               Select Meals
             </h2>
@@ -48,12 +48,16 @@ export const MealModal = ({
               className="p-1.5 rounded-md hover:bg-stone-100 transition-colors"
               style={{ color: '#9c856a' }}
             >
-              <X size={20} />
+              <X size={22} />
             </button>
           </div>
           <p
-            className="text-sm mb-6"
-            style={{ color: '#9c856a', fontFamily: "'Crimson Text', serif" }}
+            className="mb-6"
+            style={{
+              color: '#9c856a',
+              fontFamily: "'Crimson Text', serif",
+              fontSize: '18px',
+            }}
           >
             {date?.toLocaleDateString('default', {
               weekday: 'long',
@@ -68,7 +72,7 @@ export const MealModal = ({
               return (
                 <label
                   key={meal}
-                  className="flex items-center justify-between p-3.5 rounded-lg cursor-pointer transition-all"
+                  className="flex items-center justify-between p-4 rounded-lg cursor-pointer transition-all"
                   style={{
                     border: checked
                       ? `1.5px solid ${MEAL_COLORS[meal]}80`
@@ -77,12 +81,12 @@ export const MealModal = ({
                   }}
                 >
                   <div className="flex items-center gap-3">
-                    <span style={{ fontSize: '18px' }}>{MEAL_ICONS[meal]}</span>
+                    <span style={{ fontSize: '22px' }}>{MEAL_ICONS[meal]}</span>
                     <span
                       className="capitalize font-semibold"
                       style={{
                         fontFamily: "'Crimson Text', serif",
-                        fontSize: '17px',
+                        fontSize: '20px',
                         color: '#3b1a0a',
                       }}
                     >
@@ -107,11 +111,11 @@ export const MealModal = ({
           >
             {saving ? (
               <>
-                <Loader2 size={14} className="od-spin" /> Saving…
+                <Loader2 size={16} className="od-spin" /> Saving…
               </>
             ) : (
               <>
-                <CheckCircle2 size={14} /> Save Selections
+                <CheckCircle2 size={16} /> Save Selections
               </>
             )}
           </button>

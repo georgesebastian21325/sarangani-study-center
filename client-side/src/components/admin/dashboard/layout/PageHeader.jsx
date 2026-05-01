@@ -1,10 +1,5 @@
 import { Bell } from 'lucide-react';
-
-const PAGE_COPY = {
-  overview: "Here's today's meal overview for Sarangani.",
-  residents: 'Monitor and manage resident meal submissions.',
-  calendar: 'Browse aggregate meal counts across the month.',
-};
+import { PAGE_COPY } from '../js/constants';
 
 export const PageHeader = ({ activeTab, greeting, onRemind }) => (
   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
@@ -39,4 +34,3 @@ export const PageHeader = ({ activeTab, greeting, onRemind }) => (
     </button>
   </div>
 );
-

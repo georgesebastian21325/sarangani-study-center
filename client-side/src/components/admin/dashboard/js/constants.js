@@ -64,3 +64,9 @@ export const TABS = [
   { id: 'residents', label: 'Resident Status' },
   { id: 'calendar', label: 'Meal Calendar' },
 ];
+
+export const PAGE_COPY = {
+  overview: "Here's today's meal overview for Sarangani.",
+  residents: 'Monitor and manage resident meal submissions.',
+  calendar: 'Browse aggregate meal counts across the month.',
+};

@@ -39,14 +39,18 @@ export const ConfirmModal = ({
         >
           <div>
             <h2
-              className="od-garamond text-2xl font-bold"
-              style={{ color: '#5a0a1e' }}
+              className="od-garamond font-bold"
+              style={{ color: '#5a0a1e', fontSize: '30px' }}
             >
               Review Your Selection
             </h2>
             <p
-              className="text-sm mt-0.5"
-              style={{ color: '#9c856a', fontFamily: "'Crimson Text', serif" }}
+              className="mt-0.5"
+              style={{
+                color: '#9c856a',
+                fontFamily: "'Crimson Text', serif",
+                fontSize: '17px',
+              }}
             >
               {modifiedDates.length} day{modifiedDates.length !== 1 ? 's' : ''}{' '}
               scheduled
@@ -57,7 +61,7 @@ export const ConfirmModal = ({
             className="p-1.5 rounded-md hover:bg-stone-100 transition-colors"
             style={{ color: '#9c856a' }}
           >
-            <X size={20} />
+            <X size={22} />
           </button>
         </div>
 
@@ -70,7 +74,7 @@ export const ConfirmModal = ({
                 style={{
                   color: '#9c856a',
                   fontFamily: "'Crimson Text', serif",
-                  fontSize: '17px',
+                  fontSize: '19px',
                 }}
               >
                 No meals selected yet. Click on a date to get started.
@@ -90,16 +94,16 @@ export const ConfirmModal = ({
 
         {submitError && (
           <div
-            className="mx-6 mb-0 p-3 rounded-lg flex items-center gap-2 text-sm"
+            className="mx-6 mb-0 p-3 rounded-lg flex items-center gap-2"
             style={{
               background: '#fef2f2',
               border: '1px solid #fecaca',
               color: '#991b1b',
               fontFamily: "'Crimson Text', serif",
-              fontSize: '15px',
+              fontSize: '17px',
             }}
           >
-            <AlertCircle size={15} className="flex-shrink-0" />
+            <AlertCircle size={17} className="flex-shrink-0" />
             {submitError}
           </div>
         )}
@@ -126,12 +130,12 @@ export const ConfirmModal = ({
           >
             {submitting ? (
               <>
-                <Loader2 size={14} className="od-spin" />
+                <Loader2 size={16} className="od-spin" />
                 Submitting…
               </>
             ) : (
               <>
-                <CheckCircle2 size={14} />
+                <CheckCircle2 size={16} />
                 Confirm & Submit
               </>
             )}
@@ -158,10 +162,10 @@ const ConfirmDateCard = ({ dateKey, meals, request }) => {
     >
       <div>
         <h3
-          className="font-bold text-sm flex items-center gap-2 mb-2"
-          style={{ color: '#5a0a1e' }}
+          className="font-bold flex items-center gap-2 mb-2"
+          style={{ color: '#5a0a1e', fontSize: '17px' }}
         >
-          <Calendar size={13} style={{ flexShrink: 0 }} />
+          <Calendar size={16} style={{ flexShrink: 0 }} />
           {dateKey}
         </h3>
         {meals.length > 0 && (
@@ -191,7 +195,7 @@ const ConfirmDateCard = ({ dateKey, meals, request }) => {
           <span
             className="uppercase tracking-wider font-bold block mb-1.5"
             style={{
-              fontSize: '9px',
+              fontSize: '11px',
               color: '#9e7c2e',
               fontFamily: "'Cinzel', serif",
             }}
@@ -200,7 +204,7 @@ const ConfirmDateCard = ({ dateKey, meals, request }) => {
           </span>
           <ul
             className="space-y-0.5 list-disc list-inside"
-            style={{ fontFamily: "'Crimson Text', serif", fontSize: '14px' }}
+            style={{ fontFamily: "'Crimson Text', serif", fontSize: '16px' }}
           >
             {request.viand && <li>Extra Viand</li>}
             {request.sandwich && <li>Sandwich</li>}

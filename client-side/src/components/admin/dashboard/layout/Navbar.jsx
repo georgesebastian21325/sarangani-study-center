@@ -1,4 +1,5 @@
 import { LogOut, Sparkles, User } from 'lucide-react';
+import SaranganiLogo from '../../../../../public/sarangani-logo-without-text.png';
 
 export const Navbar = () => (
   <header
@@ -6,11 +7,8 @@ export const Navbar = () => (
     style={{ background: '#faf7f0', borderColor: '#e8dece' }}
   >
     <div className="flex items-center gap-3">
-      <div
-        className="w-9 h-9 rounded-full flex items-center justify-center"
-        style={{ background: '#5a0a1e' }}
-      >
-        <Sparkles size={16} className="text-amber-300" />
+      <div>
+        <img src={SaranganiLogo} alt="Sarangani Logo" className="w-5 h-5" />
       </div>
       <h1
         className="od-cinzel text-sm tracking-widest font-bold"
@@ -36,4 +34,3 @@ export const Navbar = () => (
     </div>
   </header>
 );
-

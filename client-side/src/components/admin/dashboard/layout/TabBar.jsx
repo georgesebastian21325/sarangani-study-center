@@ -1,4 +1,4 @@
-import { TABS } from '../data/constants';
+import { TABS } from '../js/constants';
 
 export const TabBar = ({ activeTab, onTabChange }) => (
   <div

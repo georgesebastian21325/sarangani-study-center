@@ -1,9 +1,12 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { isPastDate, isToday } from '../../../global/dashboard/data/dateHelpers';
+import {
+  isPastDate,
+  isToday,
+} from '../../../global/dashboard/data/dateHelpers';
 import { MEAL_COLORS } from '../../../global/dashboard/data/mealConstants';
 import { CalendarSkeleton } from '../../../global/dashboard/ui/CalendarSkeleton';
 import { MealLegend } from '../../../global/dashboard/ui/MealLegend';
-import { getMockDayCounts } from '../data/helpers';
+import { getMockDayCounts } from '../utils/helpers';
 import { SectionRule } from '../ui/SectionRule';
 
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -98,11 +101,11 @@ const CalendarDay = ({ day, onClick }) => {
   return (
     <div
       onClick={() => day.currentMonth && onClick(day)}
-      className={`h-24 p-2 od-day ${!day.currentMonth ? 'od-other-month' : ''} ${
-        today ? 'od-today' : ''
-      } ${day.currentMonth && total > 0 ? 'od-has-data' : ''} ${
-        past ? 'od-past' : ''
-      }`}
+      className={`h-24 p-2 od-day ${
+        !day.currentMonth ? 'od-other-month' : ''
+      } ${today ? 'od-today' : ''} ${
+        day.currentMonth && total > 0 ? 'od-has-data' : ''
+      } ${past ? 'od-past' : ''}`}
       style={{ cursor: day.currentMonth ? 'pointer' : 'default' }}
     >
       <span

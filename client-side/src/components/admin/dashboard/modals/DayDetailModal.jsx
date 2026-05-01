@@ -1,6 +1,9 @@
 import { X } from 'lucide-react';
-import { MEAL_COLORS, MEAL_ICONS } from '../../../global/dashboard/data/mealConstants';
-import { getMockDayCounts } from '../data/helpers';
+import {
+  MEAL_COLORS,
+  MEAL_ICONS,
+} from '../../../global/dashboard/data/mealConstants';
+import { getMockDayCounts } from '../utils/helpers';
 
 export const DayDetailModal = ({ open, date, onClose }) => {
   if (!open || !date) return null;

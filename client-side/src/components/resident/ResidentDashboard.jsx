@@ -178,7 +178,7 @@ export default function ResidentDashboard() {
           saving={requestSaving}
         />
 
-        <Toast toasts={toasts} />
+        <Toast toasts={toasts} fontSize="17px" />
       </div>
     </>
   );

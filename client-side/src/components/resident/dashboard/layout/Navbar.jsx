@@ -13,7 +13,7 @@ export const Navbar = ({ userName }) => (
         <Sparkles size={16} className="text-amber-300" />
       </div>
       <h1
-        className="od-cinzel text-sm tracking-widest font-bold"
+        className="od-cinzel tracking-widest font-bold"
         style={{ color: '#5a0a1e' }}
       >
         Sarangani Resident Portal
@@ -21,19 +21,24 @@ export const Navbar = ({ userName }) => (
     </div>
     <div className="flex items-center gap-5">
       <div
-        className="flex items-center gap-2 text-sm font-medium"
+        className="flex items-center gap-2 font-medium"
         style={{ color: '#6b5a47' }}
       >
-        <User size={15} />
-        <span style={{ fontFamily: "'Crimson Text', serif" }}>{userName}</span>
+        <User size={17} />
+        <span style={{ fontFamily: "'Crimson Text', serif", fontSize: '17px' }}>
+          {userName}
+        </span>
       </div>
       <button
-        className="flex items-center gap-1.5 text-sm hover:underline"
-        style={{ color: '#9e1e2e', fontFamily: "'Crimson Text', serif" }}
+        className="flex items-center gap-1.5 hover:underline"
+        style={{
+          color: '#9e1e2e',
+          fontFamily: "'Crimson Text', serif",
+          fontSize: '17px',
+        }}
       >
-        <LogOut size={15} /> Logout
+        <LogOut size={17} /> Logout
       </button>
     </div>
   </header>
 );
-

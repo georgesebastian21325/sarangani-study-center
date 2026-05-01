@@ -1,6 +1,6 @@
 import { AlertCircle, CheckCircle2, Loader2 } from 'lucide-react';
 
-export const Toast = ({ toasts }) => (
+export const Toast = ({ toasts, fontSize = '15px' }) => (
   <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-2 pointer-events-none">
     {toasts.map((toast) => (
       <div
@@ -14,7 +14,7 @@ export const Toast = ({ toasts }) => (
             ? 'bg-red-50 text-red-800 border border-red-200'
             : 'bg-amber-50 text-amber-800 border border-amber-200'
         }`}
-        style={{ fontFamily: "'Crimson Text', serif", fontSize: '15px' }}
+        style={{ fontFamily: "'Crimson Text', serif", fontSize }}
       >
         {toast.type === 'success' ? (
           <CheckCircle2 size={16} className="text-emerald-600 flex-shrink-0" />
@@ -28,4 +28,3 @@ export const Toast = ({ toasts }) => (
     ))}
   </div>
 );
-
