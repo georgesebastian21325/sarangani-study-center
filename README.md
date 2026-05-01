@@ -30,15 +30,15 @@ A web application designed to support the daily operations of the Sarangani Stud
 
 ## Screenshots
 
-# Login Page
+### Login Page
 
 <img width="1710" height="879" alt="image" src="https://github.com/user-attachments/assets/ed0e67e9-f88c-4126-9fb2-ee7834003d39" />
 
-# Admin Dasboard
+### Admin Dasboard
 
 <img width="1710" height="879" alt="image" src="https://github.com/user-attachments/assets/eea5cf38-4795-4a4d-8255-3286c222b304" />
 
-# Resident Dashboard
+### Resident Dashboard
 
 <img width="1710" height="879" alt="image" src="https://github.com/user-attachments/assets/25a8b153-d887-4218-aa8a-9aef65c76d39" />
 
