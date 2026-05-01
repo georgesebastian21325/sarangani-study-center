@@ -1,4 +1,5 @@
 import { LogOut, Sparkles, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SaranganiLogo from '../../../../../public/sarangani-logo-without-text.png';
 
 export const Navbar = () => (
@@ -25,12 +26,14 @@ export const Navbar = () => (
         <User size={15} />
         <span style={{ fontFamily: "'Crimson Text', serif" }}>Admin</span>
       </div>
-      <button
-        className="flex items-center gap-1.5 text-sm hover:underline"
-        style={{ color: '#9e1e2e', fontFamily: "'Crimson Text', serif" }}
-      >
-        <LogOut size={15} /> Logout
-      </button>
+      <Link to="/login">
+        <button
+          className="flex items-center gap-1.5 text-sm hover:underline"
+          style={{ color: '#9e1e2e', fontFamily: "'Crimson Text', serif" }}
+        >
+          <LogOut size={15} /> Logout
+        </button>
+      </Link>
     </div>
   </header>
 );
