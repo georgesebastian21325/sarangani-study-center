@@ -22,7 +22,6 @@ export default function LeadershipSection() {
             image="/manny-palomo.jpg"
             name="Manny Palomo"
             title="Director"
-            description="Provides overall direction and ensures the spirit of the Work is lived faithfully in the center."
           />
         </div>
 
@@ -32,14 +31,12 @@ export default function LeadershipSection() {
             image="/berns-caasi.jpg"
             name="Bernard Caasi"
             title="Formation Coordinator"
-            description="Oversees doctrinal and spiritual formation activities for members."
           />
 
           <AdminCard
             image="/william-ongsitco.jpg"
             name="William Ongsitco"
             title="Numerary"
-            description="Guides members in their prayer life, sacraments, and personal holiness."
           />
         </div>
 
@@ -49,19 +46,16 @@ export default function LeadershipSection() {
             image="/mann-rentoy.jpg"
             name="Mann Rentoy"
             title="Numerary"
-            description="Lives celibacy and is fully available for apostolic work and formation."
           />
           <AdminCard
             image="/paul-argamoso.png"
             name="Paul Argamoso"
             title="Numerary"
-            description="Lives celibacy while remaining in their professional and family environment."
           />
           <AdminCard
             image="/john-yason.png"
             name="John Yason"
             title="Numerary"
-            description="Usually married, striving for holiness in family life and professional work."
           />
         </div>
       </div>
