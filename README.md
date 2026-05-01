@@ -21,7 +21,11 @@ A web application designed to support the daily operations of the Sarangani Stud
 
 **Client:** React, TailwindCSS
 
-**Server:** Firebase, Firestore, 
+**Deployment:** Netlify
+
+**Server:** Firebase (BaaS)
+
+**Pair Agent:** Claude Code, Github Copilot
 
 
 ## Screenshots
