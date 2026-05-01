@@ -4,7 +4,7 @@ import {
   getGreetingConfig,
 } from '../components/global/dashboard/data/dateHelpers';
 import { useToast } from '../components/global/dashboard/hooks/useToast';
-import { FontLoader } from '../components/global/dashboard/styles/FontLoader';
+import { FontLoader } from '../components/global/styles/FontLoader';
 import { Toast } from '../components/global/dashboard/ui/Toast';
 import { RESIDENTS } from '../components/admin/dashboard/js/constants';
 import { Navbar } from '../components/admin/dashboard/layout/Navbar';

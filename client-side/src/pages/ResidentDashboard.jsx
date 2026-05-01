@@ -5,7 +5,7 @@ import {
   isPastDate,
 } from '../components/global/dashboard/data/dateHelpers';
 import { useToast } from '../components/global/dashboard/hooks/useToast';
-import { FontLoader } from '../components/global/dashboard/styles/FontLoader';
+import { FontLoader } from '../components/global/styles/FontLoader';
 import { Toast } from '../components/global/dashboard/ui/Toast';
 import { ResidentCalendar } from '../components/resident/dashboard/calendar/ResidentCalendar';
 import { EMPTY_REQUEST } from '../components/resident/dashboard/data/constants';
