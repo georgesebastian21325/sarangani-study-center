@@ -62,6 +62,7 @@ A web application designed to support the daily operations of the Sarangani Stud
 
 # Resident Dashboard
 
-![Uploading image.png…]()
+<img width="1710" height="879" alt="image" src="https://github.com/user-attachments/assets/25a8b153-d887-4218-aa8a-9aef65c76d39" />
+
 
 
