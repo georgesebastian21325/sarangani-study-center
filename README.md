@@ -37,7 +37,7 @@ A web application designed to support the daily operations of the Sarangani Stud
 
 ### Login Page
 
-<img width="1710" height="879" alt="image" src="https://github.com/user-attachments/assets/ed0e67e9-f88c-4126-9fb2-ee7834003d39" />
+<img width="1710" height="879" alt="image" src="https://github.com/user-attachments/assets/7344bae0-c5c9-4ea6-86b4-aea9e549c6d4" />
 
 ### Admin Dasboard
 
