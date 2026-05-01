@@ -2,6 +2,11 @@
 
 A web application designed to support the daily operations of the Sarangani Study Center. It provides a public-facing view along with an internal system for meal logging and tracking for both residents and administrators.
 
+### To Access
+
+- **Public:** https://sarangani-center.netlify.app/
+- **Admin:** https://sarangani-center.netlify.app/admin-dashboard
+- **Resident:** https://sarangani-center.netlify.app/resident-dashboard 
 
 ## Features
 
